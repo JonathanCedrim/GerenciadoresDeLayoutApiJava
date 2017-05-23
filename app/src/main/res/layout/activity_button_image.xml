@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton android:id="@+id/img_btn"
+        android:src="@drawable/ic_settings_white_48px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_btn"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seletores"
+        android:layout_gravity="center"
+        android:contentDescription="@string/img_btn_seletores" />
+
+    <CheckBox android:id="@+id/check_img_btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_img_btn_1"/>
+
+    <CheckBox android:id="@+id/check_img_btn_2"
+        style="?android:attr/starStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_img_btn_2"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/toogle_img_button_on" android:textOff="@string/toogle_img_button_off"/>
+
+    <TextView
+        android:text="@string/txt_img_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup android:id="@+id/group_img_btn"
+        android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <RadioButton android:id="@+id/rd_btn_on_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rd_btn_on_img_btn"/>
+
+        <RadioButton android:id="@+id/rd_btn_off_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rd_btn_of_img_btn"/>
+    </RadioGroup>
+</LinearLayout>

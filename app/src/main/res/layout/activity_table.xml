@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:stretchColumns="1">
+
+    <TextView android:text="@string/txt_table_title"
+        android:layout_height="wrap_content" android:layout_width="wrap_content" />
+
+    <View android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TableRow>
+        <TextView android:text="@string/product_table_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/price_table_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="@string/product_table_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/price_table_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="@string/product_table_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/price_table_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="@string/product_table_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/price_table_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="@string/product_table_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:text="@string/price_table_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+    </TableRow>
+
+    <View android:layout_height="2dp"
+    android:background="@color/colorPrimaryDark"/>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="bottom|center_horizontal">
+
+            <Button android:id="@+id/btn_table_submit"
+                android:text="@string/btn_table_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button android:id="@+id/btn_table_cancel"
+                android:text="@string/btn_table_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+</TableLayout>

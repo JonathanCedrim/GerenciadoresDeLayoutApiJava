@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GerenciadoresDeLayoutApiJava</string>
+    <string name="action_search">procurar</string>
+    <string name="action_refresh">recarregando</string>
+    <string name="action_share">compartilhar</string>
+    <string name="action_settings">configurações</string>
+    <string name="btn_main_table">retangulo</string>
+    <string name="btn_main_list">lista</string>
+    <string name="txt_login_name">nome</string>
+    <string name="txt_login_password">senha</string>
+    <string name="btn_login">entrar</string>
+    <string name="txt_table_title">Lista de produtos</string>
+    <string name="product_table_a">camisa</string>
+    <string name="price_table_b">R$ 1200.00</string>
+    <string name="product_table_b">calça</string>
+    <string name="price_table_a">R$ 900.00</string>
+    <string name="product_table_c">tênis</string>
+    <string name="price_table_c">R$ 3900.00</string>
+    <string name="product_table_d">camisa</string>
+    <string name="price_table_d">R$ 1050.00</string>
+    <string name="product_table_f">pulseira</string>
+    <string name="price_table_f">R$ 9000.00</string>
+    <string name="btn_table_submit">enviar</string>
+    <string name="btn_table_cancel">cancelar</string>
+    <string name="btn_main_listAPIJava">API</string>
+    <string name="btn_main_inflate">inflar</string>
+    <string name="btn_inflate">inflar</string>
+</resources>

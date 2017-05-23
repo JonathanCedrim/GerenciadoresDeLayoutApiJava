@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" tools:context=".activity.MainActivity">
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search_white_48px" app:showAsAction="ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item android:id="@+id/action_refresh"
+        android:title="@string/action_refresh" app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_refresh_white_48px"/>
+
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_share_white_48px" app:showAsAction="ifRoom"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+
+    <item android:id="@+id/menu_setting"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_white_48px" app:showAsAction="ifRoom"/>
+</menu>
