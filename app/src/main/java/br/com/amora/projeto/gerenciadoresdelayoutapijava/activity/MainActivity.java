@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         Button btn_spinner_button = (Button) findViewById(R.id.btn_main_spinner_button);
         Button btn_dialog_button = (Button)  findViewById(R.id.btn_main_dialog_button);
         Button btn_progress_bar = (Button) findViewById(R.id.btn_main_progress_bar_button);
+        Button btn_toast = (Button) findViewById(R.id.btn_main_toast_button);
+        Button btn_alert_dialog = (Button) findViewById(R.id.btn_main_alert_dialog_button);
 
         btn_table.setOnClickListener(onClickTable(context));
         btn_list.setOnClickListener(onClickList(context));
@@ -51,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
         btn_spinner_button.setOnClickListener(onClickSpinner());
         btn_dialog_button.setOnClickListener(onClickDialog());
         btn_progress_bar.setOnClickListener(onClickProgressBar());
-
+        btn_toast.setOnClickListener(onClickToast());
+        btn_alert_dialog.setOnClickListener(onClickAlertDialog());
     }
 
     @Override
@@ -189,6 +192,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), ProgressBarActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
+
+    private View.OnClickListener onClickToast() {
+        return new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ToastActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
+
+    private View.OnClickListener onClickAlertDialog() {
+        return new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), AlertDialogActivity.class);
                 startActivity(intent);
             }
         };

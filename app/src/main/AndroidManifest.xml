@@ -28,5 +28,7 @@
         <activity android:name=".activity.SpinnerActivity"/>
         <activity android:name=".activity.DialogActivity"/>
         <activity android:name=".activity.ProgressBarActivity"/>
+        <activity android:name=".activity.ToastActivity"/>
+        <activity android:name=".activity.AlertDialogActivity"/>
     </application>
 </manifest>

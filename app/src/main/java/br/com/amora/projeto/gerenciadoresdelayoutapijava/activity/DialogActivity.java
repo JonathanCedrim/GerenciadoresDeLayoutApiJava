@@ -19,7 +19,7 @@ import br.com.amora.projeto.gerenciadoresdelayoutapijava.R;
  * Created by cedrim on 5/16/17.
  */
 
-public class DialogActivity extends AppCompatActivity{
+public class DialogActivity extends AppCompatActivity {
     private static final String URL = "http://livroandroid.com.br/imgs/livro_android.png";
     private ProgressDialog dialog;
 
@@ -30,20 +30,17 @@ public class DialogActivity extends AppCompatActivity{
 
         dialog = ProgressDialog.show(this, "Carregando", "Buscando...", false, true);
 
-        new Thread(()->{
+        new Thread(() -> {
             try {
                 URL url = new URL(URL);
                 InputStream in = url.openStream();
                 final Bitmap img = BitmapFactory.decodeStream(in);
                 in.close();
 
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
+                runOnUiThread(() -> {
                         dialog.dismiss();
                         ImageView imgView = (ImageView) findViewById(R.id.img_dialog);
                         imgView.setImageBitmap(img);
-                    }
                 });
 
             } catch (IOException e) {
@@ -52,6 +49,6 @@ public class DialogActivity extends AppCompatActivity{
         }).start();
 
 
-        }
+    }
 }
 

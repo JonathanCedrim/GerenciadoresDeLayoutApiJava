@@ -57,4 +57,6 @@
     <string name="txt_main_touch_button">TOUCH</string>
     <string name="txt_progress_bar_progress">Barra de progresso</string>
     <string name="btn_progress_bar_simular_tarefa">Simular Tarefa</string>
+    <string name="btn_toast_button">toast</string>
+    <string name="txt_alert_dialog_button">ALERT DIALOG</string>
 </resources>
