@@ -16,6 +16,7 @@ import br.com.amora.projeto.gerenciadoresdelayoutapijava.R;
  */
 
 public class ToastActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,7 @@ public class ToastActivity extends AppCompatActivity {
 
         Button btn_toast_button = (Button) findViewById(R.id.btn_toast_button);
         btn_toast_button.setOnClickListener(onClickToast());
+
     }
 
     private View.OnClickListener onClickToast() {

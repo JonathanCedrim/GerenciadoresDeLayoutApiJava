@@ -126,6 +126,5 @@
         android:layout_height="100dp" android:layout_width="0dp"
         app:layout_row="9" app:layout_column="1"
         app:layout_columnWeight="1"/>
-
 </android.support.v7.widget.GridLayout>
 </ScrollView>

@@ -43,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         Button btn_progress_bar = (Button) findViewById(R.id.btn_main_progress_bar_button);
         Button btn_toast = (Button) findViewById(R.id.btn_main_toast_button);
         Button btn_alert_dialog = (Button) findViewById(R.id.btn_main_alert_dialog_button);
+        Button btn_list_view = (Button) findViewById(R.id.btn_main_list_view_button);
+        Button btn_list_view_custom = (Button) findViewById(R.id.btn_main_list_view_customizado_button);
+        Button btn_touch_view = (Button) findViewById(R.id.btn_main_touch_button);
 
         btn_table.setOnClickListener(onClickTable(context));
         btn_list.setOnClickListener(onClickList(context));
@@ -55,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
         btn_progress_bar.setOnClickListener(onClickProgressBar());
         btn_toast.setOnClickListener(onClickToast());
         btn_alert_dialog.setOnClickListener(onClickAlertDialog());
+        btn_list_view.setOnClickListener(onClickListView());
+        btn_list_view_custom.setOnClickListener(onCLickListViewCustom());
+
+        btn_touch_view.setOnClickListener(onClickTouch());
     }
 
     @Override
@@ -212,6 +219,36 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), AlertDialogActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
+
+    private View.OnClickListener onClickListView() {
+        return new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ListViewActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
+
+    private View.OnClickListener onCLickListViewCustom() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ListViewCustomActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
+
+    private View.OnClickListener onClickTouch() {
+        return new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), TouchScreenViewActivity.class);
                 startActivity(intent);
             }
         };
